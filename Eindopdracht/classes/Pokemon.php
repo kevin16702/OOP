@@ -12,18 +12,7 @@ class Pokemon{
     public $attackedPokemon; 
     public static $count;
 
-    public function __construct($name, $hp, $energytype, $attacks){
-        switch($name){
-            case 'Pikachu':
-                $weakness = ['Fire', 1.5];
-                $resistance = ['Fighting', 20];
-            break;
-
-            case 'Charmeleon':
-                $weakness = ['Water', 2];
-                $resistance = ['Lighting', 10];
-            break;
-        }
+    public function __construct($name, $hp, $energytype, $attacks, $weakness, $resistance){
         $this->name=$name;
         $this->hp=$hp;
         $this->energytype=$energytype;
